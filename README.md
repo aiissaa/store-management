@@ -1,9 +1,28 @@
+<div>
+  <img src="./diagrams/uni_logo.jpeg" title="fsjest" alt="fsjest" width="150" height="150" align="left"/>
+  <img src="./diagrams/logo.jpeg" title="UAE" **alt="UAE" width="400" height="150" align="right"/>
+</div>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+Created By: 
+- Adil ghafir 
+- Ayman aoufi
+- Aissa berrouhou
+
+Supervised By: 
+- Mr. Lotfi EL AACHAK
+
+
 # Store Management
 
 ## Description
 
 This is a simple store management system. It is a web application created using the Django framework. It is a simple application that allows you to add, edit, delete and view products, customers. It also allows you to manage payments and customer credits.
-
+[here](./diagrams/uni_logo.jpeg)
 ## Installation
 Make sure you have Python 3.6 or higher installed on your computer. You can download it from [here](https://www.python.org/downloads/).
 
