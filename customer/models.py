@@ -23,6 +23,7 @@ class Customer(models.Model):
     address = models.TextField(null=True, blank=True)
     credited_products = models.ManyToManyField('product.Product', through=CustomerCredit, related_name='credited_products')
     created_at = models.DateTimeField(auto_now_add=True)
+    created_by = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='customers', null=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):

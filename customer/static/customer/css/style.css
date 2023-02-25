@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* ====================================
+          UTLILITY CLASSES
+====================================== */
+
+:root{
+  --jost-font: 'Jost', sans-serif;
+  --caveat-font: 'Caveat', cursive;
+  --black-color: #000;
+  --white-color: #fff;
+  --light-color: #f8f9fa;
+  --danger-color: #ff3d00;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin-bottom: 0;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.signup_form{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(/static/customer/images/image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.signup_form h2 {
+  font-family: var(--jost-font);
+  color: var(--white-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 1.6rem !important;
+}
+
+.signup_form input{
+  padding: 1rem 1.4rem;
+  background: #F4F6F6;
+  outline: none;
+  border: none;
+  color: #000;
+  border-radius: 25px;
+  margin-bottom: 1.8rem;
+}
+
+.signup_form input:focus{
+  box-shadow: none !important;
+}
+.login_form input:active,
+.signup_form input:active{
+  box-shadow: none !important;
+}
+
+.signup_form button{
+  padding: 1rem 3rem;
+  background: var(--white-color);
+  color: var(--dark-color);
+  border: none !important;
+  outline: none !important;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  width: 100%;
+  font-family: var(--jost-font);
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.signup_form button:hover{
+  background-color: #29a587;
+  color: var(--white-color);
+}
+.signup_form label{
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--jost-font);
+}
+.signup_form .already-have-account{
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--jost-font);
+}
+.signup_form .errorlist{
+  color: var(--danger-color);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--jost-font);
+}

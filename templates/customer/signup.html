@@ -1,0 +1,21 @@
+{% extends 'customer/base.html' %}
+{% load static %}
+{% block title %}Sign Up{% endblock title %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'customer/css/style.css' %}">
+{% endblock head %}
+{% block content %}
+  <form method="post" class="signup_form">
+    {% csrf_token %}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-9 col-sm-12 mx-auto">
+            <h2>Sign up</h2>
+            {{ form.as_p}}
+            <button type="submit">Create an account</button>
+            <p class="already-have-account">Already have an account? <a href="{% url 'admin:login' %}">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </form>
+  {% endblock content %}
