@@ -7,6 +7,7 @@ class Product(models.Model):
     image = models.ImageField(upload_to=time.strftime("product/"), null=True, blank=True)
     price = models.FloatField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
+    created_by = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='products', null=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):

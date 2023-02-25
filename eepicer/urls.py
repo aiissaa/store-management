@@ -25,5 +25,6 @@ if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += [
     path('i18n/', include('django.conf.urls.i18n')),
+    path('customer/', include('customer.urls')),
     path('', admin.site.urls),
 ]
